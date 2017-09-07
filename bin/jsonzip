@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+var command = require('../lib/gzip-json');
+var program = require('commander');
+
+program
+  .version(require('../package').version, '-v, --version')
+  .option('-i, --iterate', 'find .json in all directory')
+  .option('-b, --build [type]', 'set output folder [data]', 'data')
+  .parse(process.argv);
+
+command.doWalk(program.iterate, program.build);

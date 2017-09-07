@@ -1,0 +1,27 @@
+{
+  "name": "gziptools",
+  "version": "1.0.5",
+  "description": "gzip files base64",
+  "main": "index.js",
+  "bin": {
+    "jsonzip": "./bin/jsonzip"
+  },
+  "scripts": {
+    "test": "node ./test/test.js",
+    "start": "node index.js",
+    "build-bin": "node ./bin/jsonzip"
+  },
+  "keywords": [
+    "gzip",
+    "presents"
+  ],
+  "author": "maoxin",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "js-base64": "^2.1.9",
+    "pako": "^0.2.8",
+    "path": "^0.12.7",
+    "walk": "^2.3.9"
+  }
+}
